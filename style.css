@@ -1,0 +1,960 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&family=Sevillana&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsla(210, 4%, 9%, 1);
+  background-image: url(images/des2.jpg);
+  background-blend-mode: color-burn;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+nav {
+  position: sticky;
+  top: 0.1px;
+  z-index: 20;
+  border-radius: 50px;
+  border-radius: 0px;
+  background-color: hsla(210, 4%, 9%, 1);
+}
+
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+}
+
+nav li {
+  height: 50px;
+}
+
+nav a {
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+  font-family: Edu TAS Beginner, sans-serif;
+  font-size: 25px;
+}
+
+#logo-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav a:hover {
+  color: black;
+  background-color: #f0f0f0;
+
+
+}
+
+nav li:first-child {
+  margin-right: auto;
+  margin-left: 2%;
+  font-family: Edu TAS Beginner, sans-serif;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  z-index: 15;
+}
+
+.sidebar li {
+  width: 100%;
+}
+
+.sidebar a {
+  width: 100%;
+}
+
+.menu-button {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .hideOnMobile {
+    display: none;
+  }
+
+  .menu-button {
+    display: block;
+    z-index: 20;
+  }
+}
+
+@media (max-width: 400px) {
+  .sidebar {
+    width: 100%;
+    z-index: 20;
+  }
+}
+
+.body {
+  height: 100vh;
+  width: 100%;
+}
+
+.text1 {
+  justify-items: center;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: Sevillana, sans-serif;
+  overflow-wrap: break-word;
+  /* Ensures text wrapping */
+  word-wrap: break-word;
+  /* For older browsers */
+  overflow: hidden;
+  /* Prevents overflow */
+  box-sizing: border-box;
+}
+
+.text1 h1 {
+  font-size: 5.5rem;
+  font-weight: 100;
+}
+
+.text1 h5 {
+  font-size: 3.2rem;
+  font-weight: 100;
+  font-family: Edu TAS Beginner, sans-serif;
+}
+
+.btn {
+  margin-top: 5%;
+  padding: 14px;
+  width: 15%;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  font-family: Edu TAS Beginner, sans-serif;
+  background: transparent;
+  border: 2px solid white;
+  overflow-wrap: break-word;
+  /* Ensures text wrapping */
+  word-wrap: break-word;
+  /* For older browsers */
+  overflow: hidden;
+  /* Prevents overflow */
+  box-sizing: border-box;
+}
+
+.btn:hover {
+  background: white;
+  color: rgb(0, 0, 0);
+  border: 2px solid rgb(255, 255, 255);
+  transition: 0.5s;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+.image-slider {
+  display: flex;
+  width: 100%;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+
+@keyframes slider {
+  0% {
+    background-image: url(images/pic1.jpg);
+  }
+
+  15% {
+    background-image: url(images/pic2.jpg);
+  }
+
+  30% {
+    background-image: url(images/pic3.jpg);
+  }
+
+  45% {
+    background-image: url(images/pic4.jpg);
+  }
+
+  60% {
+    background-image: url(images/pic5.jpg);
+  }
+
+  75% {
+    background-image: url(images/pic6.jpg);
+  }
+
+  90% {
+    background-image: url(images/pic8.jpg);
+  }
+
+  100% {
+    background-image: url(images/pic09.jpeg);
+  }
+}
+
+.main {
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  font-family: Edu TAS Beginner, sans-serif;
+}
+
+.video-container {
+  position: relative;
+  overflow: hidden;
+
+}
+
+ #video {
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+} 
+
+.flip-card {
+  padding-top: 15%;
+  padding-bottom: 20%;
+  perspective: 1000px;
+  overflow-wrap: break-word;
+  /* Ensures text wrapping */
+  word-wrap: break-word;
+  /* For older browsers */
+  overflow: hidden;
+  /* Prevents overflow */
+  box-sizing: border-box;
+}
+
+.flip-card-inner {
+  position: relative;
+  margin-top: 0%;
+  margin-left: 20px;
+  width: 90%;
+  height: 80vh;
+  border: 3px solid white;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  letter-spacing: 2px;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+  cursor: pointer;
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  overflow-wrap: break-word;
+  /* Ensures text wrapping */
+  word-wrap: break-word;
+  /* For older browsers */
+  overflow: hidden;
+  /* Prevents overflow */
+  box-sizing: border-box;
+}
+
+.flip-card-front {
+  background-color: rgba(20, 20, 20, 0.726);
+  color: rgb(255, 255, 255);
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front h1 {
+  background-color: rgba(255, 255, 255, 0.911);
+  border: 2px solid white;
+  padding: 10px;
+  margin-left: 31%;
+  margin-right: 31%;
+  border-radius: 1%;
+  margin-top: 20px;
+  color: rgb(8, 8, 8);
+}
+
+.flip-card-front p {
+  color: white;
+  margin-top: 80px;
+}
+
+.flip-card-back h1 {
+  color: rgb(255, 255, 255);
+  margin-top: 50%;
+  backdrop-filter: blur(1px);
+  margin-left: 5%;
+  margin-right: 5%;
+  border: 5px solid rgba(0, 0, 0, 0.979);
+  
+  padding: 7px;
+  letter-spacing: 3px;
+}
+.flip-card-back h1:hover{
+  color: rgb(0, 0, 0);
+  border-image: linear-gradient(45deg, rgba(0, 255, 13, 0.685), rgba(48, 1, 255, 0.822)) 1;
+}
+.flip-card-back a {
+  text-decoration: none;
+}
+
+#background-video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.beef {
+  background: url(images/beef.jpg) no-repeat;
+  background-size: cover;
+}
+
+.sushi {
+  background: url(images/sushi.jpg) no-repeat;
+  background-size: cover;
+}
+
+.heading {
+  text-align: center;
+}
+
+.hh1 {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-family: Sevillana, sans-serif;
+  color: white;
+  font-size: 70px;
+  font-weight: 200;
+}
+
+@media (min-width: 992px) {
+  .main {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .image-slider {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    animation: slider 30s ease infinite;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .main > div:nth-child(3) {
+    grid-column: span 2;
+  }
+
+  .image-slider {
+    width: 100% !important;
+    height: 100%;
+    background-size: cover;
+    animation: slider 30s ease infinite;
+  }
+
+  .sub1,
+  .flip-card-inner {
+    width: 80%;
+    height: 70vh;
+  }
+
+  .sub1 h1,
+  .flip-card-front h1 {
+    margin: 0 40px;
+  }
+
+  .flip-card-back h1 {
+    margin: 0 10%;
+  }
+  .text1 h1 {
+    font-size: 4rem;
+    font-weight: 100;
+  }
+  
+  .text1 h5 {
+    font-size: 2rem;
+    font-weight: 100;
+    font-family: Edu TAS Beginner, sans-serif;
+  }
+
+  /* #video{
+    width: 100vw;
+    object-fit: cover;
+  } */
+}
+
+@media (max-width: 767px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+
+  .sub1,
+  .flip-card-inner {
+    width: 90%;
+    height: 60vh;
+  }
+
+  .image-slider {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    animation: slider 30s ease infinite;
+  }
+
+  .sub1 h1,
+  .flip-card-front h1 {
+    margin: 0 20px;
+  }
+
+  .flip-card-back h1 {
+    margin: 0 5%;
+  }
+
+  .text1 h1 {
+    font-size: 2.5rem;
+    font-weight: 100;
+  }
+  
+  .text1 h5 {
+    font-size: 1.2rem;
+    font-weight: 100;
+    font-family: Edu TAS Beginner, sans-serif;
+  }
+}
+
+/* Chicken */
+:root {
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .img-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .section-subtitle {
+    position: relative;
+    color: hsl(38, 61%, 73%);
+    text-transform: uppercase;
+    margin-block-end: 12px;
+  }
+
+  .bg-black-10 {
+    background-color: hsla(30, 8%, 5%, 1);
+  }
+
+  .grid-list {
+    display: grid;
+    gap: 40px;
+  }
+
+  .shape {
+    display: none;
+    position: absolute;
+    max-width: max-content;
+    z-index: -1;
+  }
+
+  .w-100 {
+    width: 100%;
+  }
+
+  .move-anim {
+    animation: move 5s linear infinite;
+  }
+
+  @keyframes move {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(30px);
+    }
+  }
+
+  /*-----------------------------------*\
+  #MENU
+\*-----------------------------------*/
+
+  .menu .section-title {
+    margin-block-end: 40px;
+  }
+
+  .menu .grid-list {
+    margin-block-end: 50px;
+  }
+
+  .menu-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .hover\:card:is(:hover, :focus-within) .card-banner .img-cover {
+    opacity: 0.7;
+    transform: scale(1.05);
+  }
+
+  .menu-card .card-banner {
+    flex-shrink: 0;
+    border-radius: var(--radius-24);
+  }
+
+  .menu-card .card-title:is(:hover, :focus-visible) {
+    color: hsl(38, 61%, 73%);
+  }
+
+  .menu-card .badge {
+    background-color: hsl(38, 61%, 73%);
+    color: hsla(210, 4%, 9%, 1);
+    max-width: max-content;
+    text-transform: uppercase;
+    padding-inline: 10px;
+    margin-block-start: 10px;
+  }
+
+  .menu-card .span {
+    color: hsl(38, 61%, 73%);
+    margin-block: 10px;
+  }
+
+  .menu-card .card-text {
+    color: hsla(0, 0%, 65%, 1);
+    line-height: var(--lineHeight-4);
+  }
+
+  .menu-text .span {
+    display: inline-block;
+    color: hsl(38, 61%, 73%);
+  }
+
+  .menu .btn {
+    margin-block-start: 26px;
+    
+  }
+  .menu{
+    margin-bottom: 6%;
+  }
+
+  .menu-card .title-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .menu-card .badge {
+    margin-block-start: 0;
+  }
+
+  .menu-card .span {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+  }
+
+  .menu-card .span::before {
+    content: "";
+    height: 6px;
+    flex-grow: 1;
+    border-block: 1px solid var(--white-alpha-20);
+  }
+}
+
+.headline-1 {
+  font-family: Sevillana, sans-serif;
+  color: white;
+  font-size: 50px;
+  font-weight: 200;
+}
+
+#menu {
+  margin-top: 7%;
+  margin-bottom: 7%;
+  display: flex;
+}
+
+.btn-primary {
+  margin-left: calc(40vw);
+}
+
+
+
+
+/* contact */
+
+.new{
+  backdrop-filter: blur(30px);
+  width: 20%;
+  margin-left: 40vw;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+#section-wrapper{
+ mix-blend-mode:difference; 
+ background-image: url(assets/5505524.jpg); 
+ /* background-blend-mode: color-burn; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid white;
+}
+.box-wrapper{
+  position: relative;
+  display: table;
+  width:80%;
+  margin:auto;
+  margin-top:3%;
+  border-radius: 30px;
+  backdrop-filter: blur(30px);
+  border: 3px solid white;
+}
+.info-wrap{
+  width:35%;
+  height: 551px;
+  padding: 40px;
+  float: left;
+  display: block;
+  border-radius: 30px 0px 0px 30px;
+  /* background: linear-gradient(144deg, rgba(126,39,156,1) 0%, rgba(49,39,157,1) 49%); */
+  color: #ffffff; 
+}
+.info-title{
+  text-align: left;
+  font-size: 35px;
+  letter-spacing: 0.5px;
+  font-family: sevillana, sans-serif;
+  font-weight: 200;
+  
+}
+.info-sub-title{
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 17px;
+  letter-spacing: 0.5px;
+  line-height: 26px;
+  font-family: Edu TAS Beginner, sans-serif;
+  
+}
+.info-details {
+  list-style: none;
+  margin: 60px 0px;
+}
+.info-details li {
+  margin-top: 25px;
+  font-size: 18px;
+  color: #ffffff;
+  font-family: Edu TAS Beginner, sans-serif;
+}
+.info-details li i {
+  background: #F44770;
+  padding: 12px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.info-details li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.info-details li a:hover {
+  color: #F44770;
+}
+.social-icons {
+  list-style: none;
+  text-align: center;
+
+}
+
+.social-icons li i:hover {
+  background: #ffffff;
+  color: #ffffff;
+}
+.form-wrap{
+  width:65%;
+  float: right;
+  padding:40px 25px 35px 25px;
+  border-radius: 0px 30px 30px 0px;
+  /* background: #f6fafff6; */
+}
+::placeholder {
+  font-family: Edu TAS Beginner, sans-serif;
+  color: rgb(255, 255, 255);
+  opacity: 1; /* Firefox fix */
+}
+
+.form-title{
+  text-align: center;
+  font-size: 35px;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  font-family: Sevillana, sans-serif;
+  color: rgb(255, 255, 255);
+}
+.form-fields{
+  display: table;
+  width: 100%;
+  padding: 15px 5px 5px 5px;
+}
+.form-fields input,
+.form-fields textarea{
+  border: none;
+  outline:none;
+  background: none;
+  font-size: 18px;
+  color:#ffffff;
+  padding: 20px 10px 20px 5px;
+  width:100%
+}
+.form-fields textarea{
+  height: 150px;
+  resize: none;
+}
+.form-group{
+  width: 46%;
+  float: left;
+  padding: 0px 30px;
+  margin: 14px 12px;
+  border-radius: 25px;
+  border: 2px solid rgb(255, 255, 255);
+  /* box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff; */
+}
+.form-fields .form-group:last-child {
+  width: 96%;
+}
+.submit-button{
+  width: 96%;
+  height: 60px;
+  margin: 0px 12px;
+  border-radius: 30px;
+  font-size: 30px;;
+  font-weight: 200;
+  outline: none;
+  border:none;
+  cursor: pointer;
+  color:#ffffff;
+  text-align: center;
+  background: transparent;
+  border: 2px solid white;
+  font-family: Sevillana, sans-serif;  /* box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff; */
+  transition: .5s;
+}
+.submit-button:hover{
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+
+/* Responsive css */
+
+@media only screen and (max-width: 767px) {
+  .box-wrapper{
+      width: 100%;
+  }
+  .info-wrap,
+  .form-wrap{
+      width: 100%;
+      height: inherit;
+      float: none;  
+  }
+  .info-wrap{
+      border-radius: 30px 30px 0px 0px;
+  }
+  .form-wrap{
+      border-radius: 0px 0px 30px 30px;
+  }
+  .form-group{
+      width: 100%;
+      float: none;
+      margin: 25px 0px;
+  }
+  .form-fields .form-group:last-child, 
+  .submit-button{
+      width: 100%;
+  }
+  .submit-button{
+      margin: 10px 0px;
+  }
+  .new{
+    display: none;
+  }
+ 
+}
+
+
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
+
+@media (min-width: 768px) {
+ 
+
+  .grid-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  /**
+   * MENU
+   */
+
+  .menu .grid-list {
+    position: relative;
+    column-gap: 90px;
+  }
+
+  .menu .grid-list::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    border-inline-start: 1px solid white;
+  }
+}
+
+/**
+ * responsive for larger than 1200px screen
+ */
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin-inline: auto;
+}
+
+@media (min-width: 1400px) {
+  .shape {
+    display: block;
+    top: 46%;
+    left: 0;
+  }
+}
+
+/* Footer */
+.footEnd {
+  backdrop-filter: blur(5px);
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+}
+
+.same {
+  padding-left: 5%;
+}
+.same1, .same2, .same3{
+  fill: #ffffff;
+}
+
+.same1:hover {
+  fill: #02f84c;
+  cursor: pointer;
+}
+
+.same2:hover {
+  fill: #1100ff;
+  cursor: pointer;
+}
+
+.same3:hover {
+  fill: url(#myGradient);
+  cursor: pointer;
+}
+
+.end {
+  background-color: rgb(32, 32, 37);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 1;
+}
+
+.air {
+  padding: 2%;
+  color: white;
+  font-size: larger;
+}
+
+.air h3 {
+  font-family: Sevillana, sans-serif;
+  font-weight: 200;
+}
+
+.term a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 2%;
+}
+
+.c {
+  color: rgb(15, 10, 10);
+  font-weight: 800;
+}
+
+.term a:hover {
+  text-decoration: underline;
+}

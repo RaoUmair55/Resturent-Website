@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food LLC</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <ul class="sidebar">
+      <li onclick="hideSidebar()">
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+            <path
+              d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
+          </svg></a>
+      </li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#"> Menu</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#section-wrapper">Contact Us</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+    <ul>
+      <li>
+        <div id="logo-container">
+          <img src="./favicon.svg" alt="Logo" id="logo" />
+          <span id="website-name" style="display: none">Food LLC</span>
+        </div>
+      </li>
+      <li class="hideOnMobile"><a href="#">Home</a></li>
+      <li class="hideOnMobile"><a href="#">Our Menu</a></li>
+      <li class="hideOnMobile"><a href="#">About Us</a></li>
+      <li class="hideOnMobile"><a href="#section-wrapper">Contact Us</a></li>
+      <li class="hideOnMobile"><a href="login.html">Login</a></li>
+      <li class="menu-button" onclick="showSidebar()">
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+            <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
+          </svg></a>
+      </li>
+    </ul>
+  </nav>
+
+  <section class="body">
+    <div class="image-slider">
+      <div class="text1">
+        <h1>Welcome To Food, LLC</h1>
+        <br />
+        <h5>For the love of delicious food</h5>
+        <a href="#Products"><button class="btn">Menu</button></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- cards -->
+  <div class="video-container"  id="three">
+    <video id="video" autoplay loop muted>
+      <source src="video/cardsBg.mp4" type="video/mp4" />
+    </video>
+    <section class="heading">
+      <h1 class="hh1">Our Products</h1>
+  
+      <div class="main">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h1>Chicken</h1>
+              <p>
+                <b class="bol">Delicious Chicken Dishes at Our Hotel Restaurant</b>
+                <br />
+                At our hotel, we take pride in serving mouthwatering chicken
+                dishes that cater to every palate. Whether you’re a fan of
+                crispy fried chicken, aromatic tandoori chicken, or savory
+                chicken curry, our talented chefs prepare each dish with care
+                and precision. Our farm-to-table approach ensures that the
+                chicken is fresh, flavorful, and cooked to perfection. Join us
+                for a delightful dining experience where chicken takes center
+                stage!
+              </p>
+            </div>
+            <div class="flip-card-back chicken">
+              <video id="background-video" autoplay loop muted>
+                <source src="video/beef.mp4" type="video/mp4" />
+              </video>
+              <a href="#menu">
+                <h1>Click to See More</h1>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h1>Beef</h1>
+              <p>
+                <b class="bol">Savor the Richness of Our Beef Dishes</b> <br />
+                At our hotel, we celebrate the timeless appeal of beef. Our
+                culinary team crafts delectable beef dishes that showcase the
+                finest cuts and flavors. From succulent steaks grilled to
+                perfection to hearty beef stews simmered with aromatic spices,
+                our menu offers something for every beef enthusiast. Whether you
+                prefer tender filet mignon or robust beef burgers, our
+                commitment to quality ensures a memorable dining experience.
+                Join us and indulge in the savory world of beef at our
+                restaurant!
+              </p>
+            </div>
+            <div class="flip-card-back beef">
+              <a href="#menu">
+                <h1>Click To See More</h1>
+              </a>
+              <!-- <p>Some back content</p> -->
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h1>Sushi</h1>
+              <p>
+                <b class="bol">Discover the Art of Sushi at Our Hotel</b> <br />
+                At our hotel, we invite you to experience the delicate flavors
+                and exquisite craftsmanship of sushi. Our skilled sushi chefs
+                meticulously prepare each roll, combining fresh fish, perfectly
+                seasoned rice, and vibrant vegetables. Whether you’re a fan of
+                classic nigiri, creative maki rolls, or sashimi, our sushi menu
+                offers a delightful journey through Japanese culinary
+                traditions. Join us for an authentic taste of Japan, where every
+                bite is a work of art!
+              </p>
+            </div>
+            <div class="flip-card-back sushi">
+              <a href="#menu">
+                <h1>Click To See More</h1>
+              </a>
+              <!-- <p>Some back content</p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+  <!-- cards end -->
+
+  <!-- Chicken -->
+
+  <!-- 
+        - #MENU
+      -->
+
+  <section class="section menu" id="menu1">
+    <div class="container">
+      <h2 class="headline-1 section-title text-center">Delicious Menu</h2>
+
+      <ul class="grid-list">
+        <li>
+          <div class="menu-card hover:card">
+            <figure class="card-banner img-holder" style="--width: 100; --height: 100">
+              <img src="./assets/images/menu-1.png" width="100" height="100" loading="lazy" alt="Greek Salad"
+                class="img-cover" />
+            </figure>
+
+            <div>
+              <div class="title-wrapper">
+                <h3 class="title-3">
+                  <a href="#" class="card-title">Chicken Alfredo</a>
+                </h3>
+
+                <span class="badge label-1">Seasonal</span>
+
+                <span class="span title-2">$25.50</span>
+              </div>
+
+              <p class="card-text label-1">
+                Pasta tossed with a creamy Alfredo sauce and grilled chicken.
+              </p>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="menu-card hover:card">
+            <figure class="card-banner img-holder" style="--width: 100; --height: 100">
+              <img src="./assets/images/menu-2.png" width="100" height="100" loading="lazy" alt="Lasagne"
+                class="img-cover" />
+            </figure>
+
+            <div>
+              <div class="title-wrapper">
+                <h3 class="title-3">
+                  <a href="#" class="card-title">Chicken Parmesan</a>
+                </h3>
+
+                <span class="span title-2">$40.00</span>
+              </div>
+
+              <p class="card-text label-1">
+                Breaded chicken cutlets topped with marinara sauce and mozzarella cheese.
+              </p>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="menu-card hover:card">
+            <figure class="card-banner img-holder" style="--width: 100; --height: 100">
+              <img src="./assets/images/menu-3.png" width="100" height="100" loading="lazy" alt="Butternut Pumpkin"
+                class="img-cover" />
+            </figure>
+
+            <div>
+              <div class="title-wrapper">
+                <h3 class="title-3">
+                  <a href="#" class="card-title">Beef Stroganoff</a>
+                </h3>
+
+                <span class="span title-2">$10.00</span>
+              </div>
+
+              <p class="card-text label-1">
+                Sautéed pieces of beef served in a sauce with sour cream.
+              </p>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="menu-card hover:card">
+            <figure class="card-banner img-holder" style="--width: 100; --height: 100">
+              <img src="./assets/images/menu-4.png" width="100" height="100" loading="lazy" alt="Tokusen Wagyu"
+                class="img-cover" />
+            </figure>
+
+            <div>
+              <div class="title-wrapper">
+                <h3 class="title-3">
+                  <a href="#" class="card-title">Beef Bourguignon</a>
+                </h3>
+
+                <span class="badge label-1">New</span>
+
+                <span class="span title-2">$39.00</span>
+              </div>
+
+              <p class="card-text label-1">
+                French stew made with beef braised in red wine with onions, garlic, and mushrooms.
+              </p>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="menu-card hover:card">
+            <figure class="card-banner img-holder" style="--width: 100; --height: 100">
+              <img src="./assets/images/menu-5.png" width="100" height="100" loading="lazy" alt="Olivas Rellenas"
+                class="img-cover" />
+            </figure>
+
+            <div>
+              <div class="title-wrapper">
+                <h3 class="title-3">
+                  <a href="#" class="card-title">Dragon Roll</a>
+                </h3>
+
+                <span class="span title-2">$25.00</span>
+              </div>
+
+              <p class="card-text label-1">
+                A type of sushi roll with eel and cucumber inside, topped with thinly sliced avocado and eel sauce.
+              </p>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="menu-card hover:card">
+            <figure class="card-banner img-holder" style="--width: 100; --height: 100">
+              <img src="./assets/images/menu-6.png" width="100" height="100" loading="lazy" alt="Opu Fish"
+                class="img-cover" />
+            </figure>
+
+            <div>
+              <div class="title-wrapper">
+                <h3 class="title-3">
+                  <a href="#" class="card-title">Sashimi </a>
+                </h3>
+
+                <span class="span title-2">$49.00</span>
+              </div>
+
+              <p class="card-text label-1">
+                Thinly sliced raw fish or seafood served without rice.
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <a href="#" class="btn btn-primary"> View All Menu </a>
+    </div>
+  </section>
+
+  <!-- End Chicken -->
+
+
+
+<!-- contact -->
+
+<section id="section-wrapper">
+  <h1 class="headline-1 section-title text-center  new">Contact Us</h1>
+  <div class="box-wrapper">
+      <div class="info-wrap">
+          <h2 class="info-title">Contact Information</h2>
+          <h3 class="info-sub-title">Fill up the form and our Team will get back to you within 24 hours</h3>
+          <ul class="info-details">
+              <li>
+                  <i class="fas fa-phone-alt"></i>
+                  <span>Phone:</span> <a href="tel:+ 1235 2355 98">+92 344-5516558</a>
+              </li>
+              <li>
+                  <i class="fas fa-paper-plane"></i>
+                  <span>Email:</span> <a href="mailto:info@yoursite.com">230466@gmail.com</a>
+              </li>
+              <li>
+                  <i class="fas fa-globe"></i>
+                  <span>Website:</span> <a href="#">foodlcc.com</a>
+              </li>
+          </ul>
+          <ul class="social-icons">
+              <a href="#">
+                  <svg class="same same1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="55" height="55"
+                    viewBox="0 0 50 50">
+                    <path
+                      d="M 25 2 C 12.3 2 2 12.3 2 25 C 2 29.1 3.1 32.899219 5 36.199219 L 2 46.699219 C 1.9 46.999219 1.9992187 47.399219 2.1992188 47.699219 C 2.4992187 47.999219 2.8992187 48 3.1992188 48 L 14.199219 45.300781 C 17.399219 47.000781 21.1 48 25 48 C 37.7 48 48 37.7 48 25 C 48 12.3 37.7 2 25 2 z M 25 4 C 36.6 4 46 13.4 46 25 C 46 36.6 36.6 46 25 46 C 21.3 46 17.800781 45.000781 14.800781 43.300781 C 14.600781 43.200781 14.299609 43.099219 14.099609 43.199219 L 4.5 45.599609 L 7 36.400391 C 7.1 36.100391 7.0003906 35.899609 6.9003906 35.599609 C 5.1003906 32.499609 4 28.9 4 25 C 4 13.4 13.4 4 25 4 z M 18.113281 12.988281 C 17.925781 12.975781 17.800781 13 17.800781 13 L 16.599609 13 C 15.999609 13 15.100781 13.2 14.300781 14 C 13.800781 14.5 12 16.3 12 19.5 C 12 22.9 14.299609 25.799609 14.599609 26.099609 C 14.599609 26.099609 15 26.600781 15.5 27.300781 C 16 28.000781 16.699609 28.800781 17.599609 29.800781 C 19.399609 31.700781 21.899609 33.899219 25.099609 35.199219 C 26.499609 35.799219 27.699609 36.2 28.599609 36.5 C 30.199609 37 31.700781 36.900781 32.800781 36.800781 C 33.600781 36.700781 34.500391 36.299219 35.400391 35.699219 C 36.300391 35.099219 37.199609 34.400391 37.599609 33.400391 C 37.899609 32.600391 37.999609 31.900781 38.099609 31.300781 L 38.099609 30.5 C 38.099609 30.2 38.000781 30.200781 37.800781 29.800781 C 37.300781 29.000781 36.799219 29.000781 36.199219 28.800781 C 35.899219 28.600781 34.999219 28.200781 34.199219 27.800781 C 33.299219 27.400781 32.599609 27.000781 32.099609 26.800781 C 31.799609 26.700781 31.400391 26.499609 30.900391 26.599609 C 30.400391 26.699609 29.899609 27 29.599609 27.5 C 29.299609 27.9 28.200781 29.299219 27.800781 29.699219 L 27.699219 29.599609 C 27.299219 29.399609 26.7 29.200781 26 28.800781 C 25.2 28.400781 24.299219 27.800781 23.199219 26.800781 C 21.599219 25.400781 20.499219 23.699609 20.199219 23.099609 C 20.499219 22.699609 20.899609 22.3 21.099609 22 C 21.199609 21.9 21.280859 21.799219 21.349609 21.699219 C 21.418359 21.599219 21.475391 21.500391 21.525391 21.400391 C 21.625391 21.200391 21.700781 21.000781 21.800781 20.800781 C 22.200781 20.100781 22.000781 19.300391 21.800781 18.900391 C 21.800781 18.900391 21.7 18.600781 21.5 18.300781 C 21.4 18.000781 21.2 17.499609 21 17.099609 C 20.6 16.199609 20.2 15.199609 20 14.599609 C 19.7 13.899609 19.300781 13.399219 18.800781 13.199219 C 18.550781 13.049219 18.300781 13.000781 18.113281 12.988281 z M 16.599609 15 L 17.699219 15 L 17.900391 15 C 17.900391 15 17.999609 15.100391 18.099609 15.400391 C 18.299609 16.000391 18.799609 17.000391 19.099609 17.900391 C 19.299609 18.300391 19.499609 18.799609 19.599609 19.099609 C 19.699609 19.399609 19.800391 19.600781 19.900391 19.800781 C 19.900391 19.900781 20 19.900391 20 19.900391 C 19.8 20.300391 19.8 20.399219 19.5 20.699219 C 19.2 21.099219 18.799219 21.499219 18.699219 21.699219 C 18.599219 21.899219 18.299609 22.1 18.099609 22.5 C 17.899609 22.9 18.000781 23.599609 18.300781 24.099609 C 18.700781 24.699609 19.900781 26.700391 21.800781 28.400391 C 23.000781 29.500391 24.1 30.199609 25 30.599609 C 25.9 31.099609 26.600781 31.300391 26.800781 31.400391 C 27.200781 31.600391 27.599609 31.699219 28.099609 31.699219 C 28.599609 31.699219 29.000781 31.3 29.300781 31 C 29.700781 30.6 30.699219 29.399609 31.199219 28.599609 L 31.400391 28.699219 C 31.400391 28.699219 31.699609 28.8 32.099609 29 C 32.499609 29.2 32.900391 29.399609 33.400391 29.599609 C 34.300391 29.999609 35.100391 30.399609 35.400391 30.599609 L 36 30.900391 L 36 31.199219 C 36 31.599219 35.899219 32.200781 35.699219 32.800781 C 35.599219 33.100781 35.000391 33.699609 34.400391 34.099609 C 33.700391 34.499609 32.899609 34.800391 32.599609 34.900391 C 31.699609 35.000391 30.600781 35.099219 29.300781 34.699219 C 28.500781 34.399219 27.4 34.1 26 33.5 C 23.2 32.3 20.899219 30.3 19.199219 28.5 C 18.399219 27.6 17.699219 26.799219 17.199219 26.199219 C 16.699219 25.599219 16.500781 25.2 16.300781 25 C 15.900781 24.6 14 21.999609 14 19.599609 C 14 17.099609 15.200781 16.100391 15.800781 15.400391 C 16.100781 15.000391 16.499609 15 16.599609 15 z">
+                    </path>
+                  </svg>
+                </a>
+                <!-- <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" /> -->
+          
+                <a href="#">
+                  <svg class="same same2" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="55" height="55"
+                    viewBox="0 0 50 50">
+                    <path
+                      d="M 25 3 C 12.861562 3 3 12.861562 3 25 C 3 36.019135 11.127533 45.138355 21.712891 46.728516 L 22.861328 46.902344 L 22.861328 29.566406 L 17.664062 29.566406 L 17.664062 26.046875 L 22.861328 26.046875 L 22.861328 21.373047 C 22.861328 18.494965 23.551973 16.599417 24.695312 15.410156 C 25.838652 14.220896 27.528004 13.621094 29.878906 13.621094 C 31.758714 13.621094 32.490022 13.734993 33.185547 13.820312 L 33.185547 16.701172 L 30.738281 16.701172 C 29.349697 16.701172 28.210449 17.475903 27.619141 18.507812 C 27.027832 19.539724 26.84375 20.771816 26.84375 22.027344 L 26.84375 26.044922 L 32.966797 26.044922 L 32.421875 29.564453 L 26.84375 29.564453 L 26.84375 46.929688 L 27.978516 46.775391 C 38.71434 45.319366 47 36.126845 47 25 C 47 12.861562 37.138438 3 25 3 z M 25 5 C 36.057562 5 45 13.942438 45 25 C 45 34.729791 38.035799 42.731796 28.84375 44.533203 L 28.84375 31.564453 L 34.136719 31.564453 L 35.298828 24.044922 L 28.84375 24.044922 L 28.84375 22.027344 C 28.84375 20.989871 29.033574 20.060293 29.353516 19.501953 C 29.673457 18.943614 29.981865 18.701172 30.738281 18.701172 L 35.185547 18.701172 L 35.185547 12.009766 L 34.318359 11.892578 C 33.718567 11.811418 32.349197 11.621094 29.878906 11.621094 C 27.175808 11.621094 24.855567 12.357448 23.253906 14.023438 C 21.652246 15.689426 20.861328 18.170128 20.861328 21.373047 L 20.861328 24.046875 L 15.664062 24.046875 L 15.664062 31.566406 L 20.861328 31.566406 L 20.861328 44.470703 C 11.816995 42.554813 5 34.624447 5 25 C 5 13.942438 13.942438 5 25 5 z">
+                    </path>
+                  </svg>
+                </a>
+          
+                <a href="#">
+                  <svg class="same same3" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="55" height="55"
+                    viewBox="0 0 50 50">
+                    <defs>
+                      <linearGradient id="myGradient">
+                        <stop offset="0%" stop-color="#f9ce34" />
+                        <stop offset="50%" stop-color="#ee2a7b" />
+                        <stop offset="100%" stop-color="#6228d7" />
+                      </linearGradient>
+                    </defs>
+                    <path
+                      d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z">
+                    </path>
+                  </svg>
+          </ul>
+      </div>
+      <div class="form-wrap">
+          <form>
+              <h2 class="form-title">Send Us a Message</h2>
+              <div class="form-fields">
+                  <div class="form-group">
+                      <input type="text" class="fname" placeholder="First Name">
+                  </div>
+                  <div class="form-group">
+                      <input type="text" class="lname" placeholder="Last Name">
+                  </div>
+                  <div class="form-group">
+                      <input type="email" class="email" placeholder="Mail">
+                  </div>
+                  <div class="form-group">
+                      <input type="number" class="phone" placeholder="Phone">
+                  </div>
+                  <div class="form-group">
+                      <textarea name="message" id="" placeholder="Write your message"></textarea>
+                  </div>
+              </div>
+              <input type="submit" value="Send Message" class="submit-button">
+          </form>
+      </div>
+  </div>
+</section>
+
+
+<!-- end contact -->
+
+<!-- About us -->
+
+
+
+<!-- End About us -->
+  <!-- footer -->
+
+  <section class="footEnd">
+    <div class="icons">
+      <a href="#">
+        <svg class="same same1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="55" height="55"
+          viewBox="0 0 50 50">
+          <path
+            d="M 25 2 C 12.3 2 2 12.3 2 25 C 2 29.1 3.1 32.899219 5 36.199219 L 2 46.699219 C 1.9 46.999219 1.9992187 47.399219 2.1992188 47.699219 C 2.4992187 47.999219 2.8992187 48 3.1992188 48 L 14.199219 45.300781 C 17.399219 47.000781 21.1 48 25 48 C 37.7 48 48 37.7 48 25 C 48 12.3 37.7 2 25 2 z M 25 4 C 36.6 4 46 13.4 46 25 C 46 36.6 36.6 46 25 46 C 21.3 46 17.800781 45.000781 14.800781 43.300781 C 14.600781 43.200781 14.299609 43.099219 14.099609 43.199219 L 4.5 45.599609 L 7 36.400391 C 7.1 36.100391 7.0003906 35.899609 6.9003906 35.599609 C 5.1003906 32.499609 4 28.9 4 25 C 4 13.4 13.4 4 25 4 z M 18.113281 12.988281 C 17.925781 12.975781 17.800781 13 17.800781 13 L 16.599609 13 C 15.999609 13 15.100781 13.2 14.300781 14 C 13.800781 14.5 12 16.3 12 19.5 C 12 22.9 14.299609 25.799609 14.599609 26.099609 C 14.599609 26.099609 15 26.600781 15.5 27.300781 C 16 28.000781 16.699609 28.800781 17.599609 29.800781 C 19.399609 31.700781 21.899609 33.899219 25.099609 35.199219 C 26.499609 35.799219 27.699609 36.2 28.599609 36.5 C 30.199609 37 31.700781 36.900781 32.800781 36.800781 C 33.600781 36.700781 34.500391 36.299219 35.400391 35.699219 C 36.300391 35.099219 37.199609 34.400391 37.599609 33.400391 C 37.899609 32.600391 37.999609 31.900781 38.099609 31.300781 L 38.099609 30.5 C 38.099609 30.2 38.000781 30.200781 37.800781 29.800781 C 37.300781 29.000781 36.799219 29.000781 36.199219 28.800781 C 35.899219 28.600781 34.999219 28.200781 34.199219 27.800781 C 33.299219 27.400781 32.599609 27.000781 32.099609 26.800781 C 31.799609 26.700781 31.400391 26.499609 30.900391 26.599609 C 30.400391 26.699609 29.899609 27 29.599609 27.5 C 29.299609 27.9 28.200781 29.299219 27.800781 29.699219 L 27.699219 29.599609 C 27.299219 29.399609 26.7 29.200781 26 28.800781 C 25.2 28.400781 24.299219 27.800781 23.199219 26.800781 C 21.599219 25.400781 20.499219 23.699609 20.199219 23.099609 C 20.499219 22.699609 20.899609 22.3 21.099609 22 C 21.199609 21.9 21.280859 21.799219 21.349609 21.699219 C 21.418359 21.599219 21.475391 21.500391 21.525391 21.400391 C 21.625391 21.200391 21.700781 21.000781 21.800781 20.800781 C 22.200781 20.100781 22.000781 19.300391 21.800781 18.900391 C 21.800781 18.900391 21.7 18.600781 21.5 18.300781 C 21.4 18.000781 21.2 17.499609 21 17.099609 C 20.6 16.199609 20.2 15.199609 20 14.599609 C 19.7 13.899609 19.300781 13.399219 18.800781 13.199219 C 18.550781 13.049219 18.300781 13.000781 18.113281 12.988281 z M 16.599609 15 L 17.699219 15 L 17.900391 15 C 17.900391 15 17.999609 15.100391 18.099609 15.400391 C 18.299609 16.000391 18.799609 17.000391 19.099609 17.900391 C 19.299609 18.300391 19.499609 18.799609 19.599609 19.099609 C 19.699609 19.399609 19.800391 19.600781 19.900391 19.800781 C 19.900391 19.900781 20 19.900391 20 19.900391 C 19.8 20.300391 19.8 20.399219 19.5 20.699219 C 19.2 21.099219 18.799219 21.499219 18.699219 21.699219 C 18.599219 21.899219 18.299609 22.1 18.099609 22.5 C 17.899609 22.9 18.000781 23.599609 18.300781 24.099609 C 18.700781 24.699609 19.900781 26.700391 21.800781 28.400391 C 23.000781 29.500391 24.1 30.199609 25 30.599609 C 25.9 31.099609 26.600781 31.300391 26.800781 31.400391 C 27.200781 31.600391 27.599609 31.699219 28.099609 31.699219 C 28.599609 31.699219 29.000781 31.3 29.300781 31 C 29.700781 30.6 30.699219 29.399609 31.199219 28.599609 L 31.400391 28.699219 C 31.400391 28.699219 31.699609 28.8 32.099609 29 C 32.499609 29.2 32.900391 29.399609 33.400391 29.599609 C 34.300391 29.999609 35.100391 30.399609 35.400391 30.599609 L 36 30.900391 L 36 31.199219 C 36 31.599219 35.899219 32.200781 35.699219 32.800781 C 35.599219 33.100781 35.000391 33.699609 34.400391 34.099609 C 33.700391 34.499609 32.899609 34.800391 32.599609 34.900391 C 31.699609 35.000391 30.600781 35.099219 29.300781 34.699219 C 28.500781 34.399219 27.4 34.1 26 33.5 C 23.2 32.3 20.899219 30.3 19.199219 28.5 C 18.399219 27.6 17.699219 26.799219 17.199219 26.199219 C 16.699219 25.599219 16.500781 25.2 16.300781 25 C 15.900781 24.6 14 21.999609 14 19.599609 C 14 17.099609 15.200781 16.100391 15.800781 15.400391 C 16.100781 15.000391 16.499609 15 16.599609 15 z">
+          </path>
+        </svg>
+      </a>
+      <!-- <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" /> -->
+
+      <a href="#">
+        <svg class="same same2" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="55" height="55"
+          viewBox="0 0 50 50">
+          <path
+            d="M 25 3 C 12.861562 3 3 12.861562 3 25 C 3 36.019135 11.127533 45.138355 21.712891 46.728516 L 22.861328 46.902344 L 22.861328 29.566406 L 17.664062 29.566406 L 17.664062 26.046875 L 22.861328 26.046875 L 22.861328 21.373047 C 22.861328 18.494965 23.551973 16.599417 24.695312 15.410156 C 25.838652 14.220896 27.528004 13.621094 29.878906 13.621094 C 31.758714 13.621094 32.490022 13.734993 33.185547 13.820312 L 33.185547 16.701172 L 30.738281 16.701172 C 29.349697 16.701172 28.210449 17.475903 27.619141 18.507812 C 27.027832 19.539724 26.84375 20.771816 26.84375 22.027344 L 26.84375 26.044922 L 32.966797 26.044922 L 32.421875 29.564453 L 26.84375 29.564453 L 26.84375 46.929688 L 27.978516 46.775391 C 38.71434 45.319366 47 36.126845 47 25 C 47 12.861562 37.138438 3 25 3 z M 25 5 C 36.057562 5 45 13.942438 45 25 C 45 34.729791 38.035799 42.731796 28.84375 44.533203 L 28.84375 31.564453 L 34.136719 31.564453 L 35.298828 24.044922 L 28.84375 24.044922 L 28.84375 22.027344 C 28.84375 20.989871 29.033574 20.060293 29.353516 19.501953 C 29.673457 18.943614 29.981865 18.701172 30.738281 18.701172 L 35.185547 18.701172 L 35.185547 12.009766 L 34.318359 11.892578 C 33.718567 11.811418 32.349197 11.621094 29.878906 11.621094 C 27.175808 11.621094 24.855567 12.357448 23.253906 14.023438 C 21.652246 15.689426 20.861328 18.170128 20.861328 21.373047 L 20.861328 24.046875 L 15.664062 24.046875 L 15.664062 31.566406 L 20.861328 31.566406 L 20.861328 44.470703 C 11.816995 42.554813 5 34.624447 5 25 C 5 13.942438 13.942438 5 25 5 z">
+          </path>
+        </svg>
+      </a>
+
+      <a href="#">
+        <svg class="same same3" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="55" height="55"
+          viewBox="0 0 50 50">
+          <defs>
+            <linearGradient id="myGradient">
+              <stop offset="0%" stop-color="#f9ce34" />
+              <stop offset="50%" stop-color="#ee2a7b" />
+              <stop offset="100%" stop-color="#6228d7" />
+            </linearGradient>
+          </defs>
+          <path
+            d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z">
+          </path>
+        </svg>
+      </a>
+    </div>
+
+
+
+
+
+
+
+    <footer>
+      <div class="end">
+        <div class="air">
+          <h3>Food, LLC</h3>
+        </div>
+        <div class="term">
+          <div class="space">
+            <a href="">Terms of Use</a>
+            <a href="">Privacy</a>
+            <a href="">Copyright</a>
+          </div>
+          <div>
+            <p class="c">©Copyright Rao Umair. 2024.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+
+  <!-- End footer -->
+  <script src="script.js"></script>
+</body>
+
+</html>
